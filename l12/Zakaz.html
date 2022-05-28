@@ -1,0 +1,19 @@
+<html> 
+ <head> 
+  <title>Заказ товаров</title> <meta charset="utf-8"> 
+  <script>
+       function fun(){
+        document.write("Компания " + document.getElementByName("firma").value + " заказала - " + document.getElementByName("tovar").value)
+       } 
+  </script>
+ </head>
+ <body>
+  <form name = "f1"> 
+   <h1 align = "left"> Заказ товаров </h1>
+      Компания <input type = "text" name = "firma" size = 30> 
+      заказала <input type = "text" name = "tovar" size = 30> 
+    <br><br>
+   <input type = "button" name = "b1" size = 30 value="Click" onclick="fun()"> 
+  </form>
+ </body> 
+</html>
